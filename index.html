@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <style> 
+        #heart {
+            display: flex; 
+            align-items: center; 
+            justify-content: center;
+        } 
+        .heart-box { 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            width: 100vw; 
+            height: 100vh;
+        } 
+        .heart-box i { 
+            font-size: 320px; 
+            color: #E687B3;
+        } 
+        .none { 
+            display: none;
+        } 
+        .message {  
+            text-align: center;
+            font-size: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div id="heart">
+        <div class="heart-box">
+            <i class="heart-box__icon fa-solid fa-heart"></i> 
+            <p class="message none"> Yêu bé Nhung nhiều vãi ò</p>
+        </div>
+    </div>
+</body> 
+<script>
+    document.querySelector('#heart').onclick = function() { 
+        document.querySelector('.heart-box__icon').classList.add('none') 
+        document.querySelector('.message').classList.remove('none') 
+    }
+</script>
+</html>
